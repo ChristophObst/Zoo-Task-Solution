@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="input-email">Enter your Email</label>
+          <input id="input-email" type="text" name="email" />
+          <!-- Date: label & input -->
+          <label for="input-date">Your preferred date</label>
+          <input id="input-date" type="date" name="date" />
+
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+            <!-- Radio Buttons: labels & inputs -->
+            <label for="select-sloth" type="text" >relaxed sloths</label>
+            <input id="select-sloth" type="radio" name="animal" />
+            <label for="select-kangaroo" type="text" >jumpy kangaroos</label>
+            <input id="select-kangaroo" type="radio" name="animal" />
+            <label for="select-racoon" type="text" >thieving racoons</label>
+            <input id="select-racoon" type="radio" name="animal" />            
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="leaveMessage" type="text" name="message"
+            >Leave a message</label
+          >
+          <textarea id="leaveMessage" rows="7"></textarea>
+
+          <!-- Two Checkboxes: labels & inputs -->
+          <label for="submitting"
+            >Would you like to subscribe our newsletter by agreeing to the
+            processing of your data?</label
+          >
+          <input id="submitting" type="checkbox" name="submitting"> yes</input>
+         
+          <!-- Two Buttons: reset & submit -->
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </body>
+</html>
